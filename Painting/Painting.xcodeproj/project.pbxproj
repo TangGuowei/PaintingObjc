@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E21A57431AD8F60600A70FBE /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = E21A57421AD8F60600A70FBE /* Dot.m */; };
+		E21A57461AD8F91500A70FBE /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = E21A57451AD8F91500A70FBE /* Stroke.m */; };
 		E28054081AD8CDC8007B61A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E28054071AD8CDC8007B61A0 /* main.m */; };
 		E280540B1AD8CDC9007B61A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E280540A1AD8CDC8007B61A0 /* AppDelegate.m */; };
 		E280540E1AD8CDC9007B61A0 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E280540D1AD8CDC9007B61A0 /* MasterViewController.m */; };
@@ -15,6 +17,7 @@
 		E28054161AD8CDC9007B61A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28054151AD8CDC9007B61A0 /* Images.xcassets */; };
 		E28054191AD8CDC9007B61A0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E28054171AD8CDC9007B61A0 /* LaunchScreen.xib */; };
 		E28054251AD8CDC9007B61A0 /* PaintingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E28054241AD8CDC9007B61A0 /* PaintingTests.m */; };
+		E2D3CE431AD8D17E0054C103 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D3CE421AD8D17E0054C103 /* Vertex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E21A57411AD8F60600A70FBE /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
+		E21A57421AD8F60600A70FBE /* Dot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
+		E21A57441AD8F91500A70FBE /* Stroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
+		E21A57451AD8F91500A70FBE /* Stroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
+		E21DD2C51AD8D0E6007D19BF /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
 		E28054021AD8CDC8007B61A0 /* Painting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Painting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28054061AD8CDC8007B61A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E28054071AD8CDC8007B61A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,6 +51,8 @@
 		E280541E1AD8CDC9007B61A0 /* PaintingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaintingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28054231AD8CDC9007B61A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E28054241AD8CDC9007B61A0 /* PaintingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintingTests.m; sourceTree = "<group>"; };
+		E2D3CE411AD8D17E0054C103 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		E2D3CE421AD8D17E0054C103 /* Vertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E21DD2C41AD8D0CC007D19BF /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				E21DD2C51AD8D0E6007D19BF /* Mark.h */,
+				E2D3CE411AD8D17E0054C103 /* Vertex.h */,
+				E2D3CE421AD8D17E0054C103 /* Vertex.m */,
+				E21A57411AD8F60600A70FBE /* Dot.h */,
+				E21A57421AD8F60600A70FBE /* Dot.m */,
+				E21A57441AD8F91500A70FBE /* Stroke.h */,
+				E21A57451AD8F91500A70FBE /* Stroke.m */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
 		E28053F91AD8CDC8007B61A0 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +108,7 @@
 		E28054041AD8CDC8007B61A0 /* Painting */ = {
 			isa = PBXGroup;
 			children = (
+				E21DD2C41AD8D0CC007D19BF /* Drawing */,
 				E28054091AD8CDC8007B61A0 /* AppDelegate.h */,
 				E280540A1AD8CDC8007B61A0 /* AppDelegate.m */,
 				E280540C1AD8CDC9007B61A0 /* MasterViewController.h */,
@@ -226,7 +251,10 @@
 			files = (
 				E280540B1AD8CDC9007B61A0 /* AppDelegate.m in Sources */,
 				E280540E1AD8CDC9007B61A0 /* MasterViewController.m in Sources */,
+				E2D3CE431AD8D17E0054C103 /* Vertex.m in Sources */,
+				E21A57431AD8F60600A70FBE /* Dot.m in Sources */,
 				E28054081AD8CDC8007B61A0 /* main.m in Sources */,
+				E21A57461AD8F91500A70FBE /* Stroke.m in Sources */,
 				E28054111AD8CDC9007B61A0 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +446,7 @@
 				E280542A1AD8CDC9007B61A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E280542B1AD8CDC9007B61A0 /* Build configuration list for PBXNativeTarget "PaintingTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +455,7 @@
 				E280542D1AD8CDC9007B61A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
