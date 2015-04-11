@@ -24,7 +24,7 @@
 - (id)copyWithZone:(NSZone *)zone
 {
     Stroke * strokeCopy = [[[self class] allocWithZone:zone] init];
-    [strokeCopy setColor:[_color copy]];
+    [strokeCopy setColor:[UIColor colorWithCGColor:[_color CGColor]]];
     [strokeCopy setSize:_size];
     for (id<Mark> child in _children) {
         id <Mark> childCopy = [child copy];

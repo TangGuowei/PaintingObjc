@@ -14,7 +14,8 @@
 - (id)copyWithZone:(NSZone *)zone
 {
     Dot* dotCopy = [[[self class] allocWithZone:zone] initWithLocation:_location];
-    [dotCopy setColor:[_color copy]];
+    //注意此处UIColor的复制方法，已经尝试使用 [_color copy],不OK
+    [dotCopy setColor:[UIColor colorWithCGColor:[_color CGColor]]];
     [dotCopy setSize:_size];
     return dotCopy;
 }
